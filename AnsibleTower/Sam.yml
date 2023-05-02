@@ -1,0 +1,7 @@
+---
+- name: Response 
+  hosts: all
+  become: yes
+  task: Ping Pong
+  - name: Pong
+    ping:
