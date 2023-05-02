@@ -2,6 +2,6 @@
 - name: Response 
   hosts: all
   become: yes
-  task: Ping Pong
+  tasks: Ping Pong
   - name: Pong
     ping:
