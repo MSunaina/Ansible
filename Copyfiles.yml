@@ -1,0 +1,11 @@
+# Copy multiple files from src to dest
+---
+- name: Copy multiple files
+  hosts: all
+  tasks: 
+    - name: Copying multiple files from local src to dest server
+      synchronize:
+        src: C:\Users\SUMUDUMB\Documents\AnsibleTower\Files
+        dest: /home/ec2-user/Transfered_files
+      delegate_to: localhost
+      
