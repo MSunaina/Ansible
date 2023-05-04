@@ -6,8 +6,8 @@
       git:
         repo: https://github.com/MSunaina/Ansible.git
         version: main
-        dest: "/temp/Ansible"
+        dest: "/Ansible"
     - name: copy files to ec2
       synchronize:
-        src: "/temp/Ansible/Files/"
+        src: "Ansible/Files"
         dest: /home/ec2-user/Transfered_files
