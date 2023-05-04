@@ -1,6 +1,7 @@
 ---
-- name: Response 
+- name: ping test
   hosts: all
-  task: Ping Pong
-    - name: Pong
+  task: 
+    - name: ping test 
       ping:
+      
