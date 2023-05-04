@@ -1,0 +1,14 @@
+How to Download Ansible Tower?
+You can either install Tower on its own or use the installer that comes with it:
+
+You can download the standalone Tower installer if you’re installing Tower in an environment with direct Internet access.
+
+If you’re installing Tower in an environment with no direct access to online repositories or a proxy, you’ll need to utilise the bundled installer.
+
+http://releases.ansible.com/ansible-tower/setup/ Download and unpack the Ansible Tower installation/upgrade tool: http://releases.ansible.com/ansible-tower/setup/
+
+$ tar xvzf ansible-tower-setup-latest.tar.gz root@localhost
+
+$ cd ansible-tower-setup-tower version> root@localhost
+
+To install or upgrade, open the ansible-tower-setup-tower version> directory and change the inventory file, changing tower version> with the version number, such as 3.4.5 or 3.5.0.

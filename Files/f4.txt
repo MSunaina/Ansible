@@ -1,0 +1,44 @@
+Features of Ansible Tower
+Ansible Dashboard:
+
+As soon as we log in to the Ansible Tower online portal, we are presented with an Ansible Dashboard. Ansible Dashboard displays job status in a graphical format, as well as information about recent job runs and templates. It also displays the number of hosts, failed hosts, inventories, and projects, among other things. We can also change the job status according to our needs.
+
+Workflow Editor:
+
+Workflow editor allows us to connect numerous playbooks, updates, and workflows together, even if they are run by different users, use different inventories, or have different credentials. We can establish dependencies, such as when the success or failure of one playbook is dependent on the success or failure of another. To set up a base system configuration and deploy an application, we may easily chain together different playbooks produced and maintained by different teams.
+
+Tower Clustering:
+
+To achieve high availability and higher performance, we need more than one Ansible Tower. Multiple nodes can be used to form an Ansible Tower cluster. We can quickly scale our Ansible automation to meet our needs, and we can also set aside capacity for teams, jobs, and remote execution for enterprise-wide access. With 20 cluster nodes, the Ansible Automation architecture can accommodate up to 200k nodes.
+
+Real-time Analysis:
+
+It offers a real-time update on the success and failure of each host’s Ansible plays and tasks. We can view the current state of our automation and which tasks will be executed next. We can also monitor how source control updates and client inventory refreshes are progressing.
+
+Audit Trail:
+
+It is critical in an organisation to keep track of any changes made to an application so that if something goes wrong, we can examine the logs and undo any modifications made by mistake. Ansible Tower keeps track of all the details about any modifications made to Ansible, including who made them, what changes were made, and when they happened. All modifications made to Ansible Tower, such as job creation information, inventory adjustments, and so on, are tracked by Ansible Tower. This audit trail may be seen in the Activity Stream section of the web portal. It can also be linked with the organization’s existing logging application to perform greater automation and event correlation analysis and generate tickers in any ITSM product.
+
+Job Scheduling:
+
+We can use Ansible Tower to schedule jobs that run a playbook, update the cloud inventory, and update source control at a given time, daily, or weekly. Ansible does not have this functionality. The frequency of the scheduled jobs can also be set. We can also connect it to a continuous delivery pipeline.
+
+Self-Service:
+
+We may delegate read-only access to L1 users to keep an eye on Ansible Dashboards or conduct simple activities like adding new users, and groups, resetting the password, and so on with Ansible Tower’s self-service functionality. It also allows us to delegate control to Developers and QA users, allowing them to set up their own development and testing environments and conduct their jobs without the need for Ansible Administrator’s participation.
+
+Notification Integration:
+
+To notify users or teams about the success or failure of jobs, we can link Ansible Tower with email, messaging apps like Slack, HipChat, etc., SMS, PagerDuty, and more. We can also use Ansible tools to send notifications to a custom webhook, which can then be used to activate other tools in our infrastructure. For example, if any tasks fail, it will send a notification to any ITSM tool, which will create an incident for the job failure.
+
+Rest API and CLI Tool:
+
+Using the REST API, we can simply interface with Ansible Tower. It facilitates integration with other REST API-enabled third-party solutions. If we want to use Ansible Tower’s CLI tool to combine it with any command tools, that’s possible.
+
+Management and Tracking of our inventory:
+
+We can use this tower to manage our complete infrastructure inventory, whether it’s housed on a public cloud platform like Amazon Web Services, Microsoft Azure, GCP, or a private cloud like OpenStack or VMware. It syncs our cloud inventory on a regular basis, and we can also request settings on demand.
+
+Execute Commands Remotely:
+
+We may use the Conduct Command functionality in Ansible Tower to run tasks on any host or group of hosts in our inventory. It’s the same as using Ansible’s Ad-hoc command.

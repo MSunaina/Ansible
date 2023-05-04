@@ -1,0 +1,8 @@
+# Greetings Playbook 
+---
+- name: Greetings
+  hosts: all
+  tasks:
+    - name: Greetings to world
+      debug:
+        msg: "Hola!"

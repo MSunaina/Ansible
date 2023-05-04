@@ -1,0 +1,1 @@
+Ansible Content Collections are a new way of distributing content, including modules, for Ansible.
