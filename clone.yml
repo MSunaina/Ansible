@@ -1,0 +1,10 @@
+---
+- name: cloning
+  hosts: all
+  tasks:
+    - name: copy
+      git:
+        repo: https://github.com/MSunaina/Ansible.git
+        dest: . 
+        clone: yes
+        update: yes
