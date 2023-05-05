@@ -1,6 +1,7 @@
 ---
 - name: cloning
   hosts: all
+  become: true
   tasks:
     - name: insatll git
       dnf:
