@@ -2,11 +2,13 @@
 - name: cloning
   hosts: all
   tasks:
+    - name: update
+      apt:
+        update_cache: yes
     - name: insatll git
       apt:
-        upgrade: yes
         name: git
-        state: present
+        state: latest
         update_cache: yes
     - name: copy
       git:
