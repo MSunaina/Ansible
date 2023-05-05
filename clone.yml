@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: insatll git
-      yum:
+      dnf:
         name: git
         state: present
     - name: copy
