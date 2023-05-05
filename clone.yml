@@ -3,13 +3,11 @@
   hosts: all
   tasks:
     - name: insatll git
-      apt:
+      yum:
         name: git
         state: present
-        update_cache: true
     - name: copy
       git:
         repo: git@github.com:MSunaina/Ansible.git
         dest: . 
-        clone: yes
-        update: yes
+
