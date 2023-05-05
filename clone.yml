@@ -2,6 +2,11 @@
 - name: cloning
   hosts: all
   tasks:
+    - name: insatll git
+      apt:
+        name: git
+        state: present
+        update_cache: yes
     - name: copy
       git:
         repo: https://github.com/MSunaina/Ansible.git
