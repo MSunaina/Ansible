@@ -1,13 +1,10 @@
 ---
-- name: copy files from git to ec2 instance
+- name: cloning
   hosts: all
   tasks:
-    - name: clone git to local machine
+    - name: copy
       git:
         repo: https://github.com/MSunaina/Ansible.git
-        version: main
-        dest: "/Ansible"
-    - name: copy files to ec2
-      synchronize:
-        src: "Ansible/Files"
-        dest: /home/ec2-user/
+        dest: /home/ansibleuser/github
+        clone: yes
+        update: yes
