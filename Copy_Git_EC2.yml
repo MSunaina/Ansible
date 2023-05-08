@@ -1,6 +1,7 @@
 ---
 - name: cloning
   hosts: all
+  become: yes 
   tasks:
     - name: copy
       git:
