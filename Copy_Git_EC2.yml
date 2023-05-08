@@ -6,6 +6,6 @@
     - name: copy
       git:
         repo: https://github.com/MSunaina/Ansible.git
-        dest: /home/ansibleuser/github
+        dest: /home/ansibleuser/sam
         clone: yes
         update: yes
