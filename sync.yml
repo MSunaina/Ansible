@@ -1,0 +1,12 @@
+---
+- name: copy files
+  hosts: all
+  tasks:
+    - name: copy
+      git:
+        repo: https://github.com/MSunaina/Ansible.git
+        dest: /home/ansibleuser/sync_module
+    - name: sync
+      synchronize:
+        src: /home/ansibleuser/sync_module
+        dest: .
